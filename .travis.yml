@@ -1,19 +1,21 @@
 language: node_js
 before_script:
-  - npm install -g gatsby-cli
+- npm install -g gatsby-cli
 node_js:
-  - "stable"
+- stable
 git:
   depth: 3
-secure: "EMs9183UUqFibUqUXW8S71sYghuU99fi80mH0uYVD1d29Ccfx4+hiByJQzFkOxPXWf8v/+Yka2t2INtErGDOWoeHoZ3N6LZAw/xgDKEaUmbHNMOTyQyVHMBQRBf+EAOFBTF5z3sXknbi1n4OQk2AyHWsVEK3NAgITiXciSadFKjJlNTKHQFWsD7e4ToiS9kXLGb8Zpxm2YxaGZbSkiOhDxI5pJbEkxGqtRpp/rvpBr8hwdgn83qyZUN1fPk4XzzPNoTj9dZ8qC6z4fvxqOxvhC3SltReWiWv6sn4I57xHTOICPirFh8LhiCjIdeY/pIizJ6P+h4MuIZ1lz08hqddLpJmr1kroyE7EtoUTjryDoaqskcgDysME2g92EqAE2DMBIFpEtPH+kj/XHwXhtI3Jar17zTg831ifu4PR+azHBUtJkexbMdLCP4BLo7iTgpvfrwSjK7BUZve6rzZjCe7xbmMapSKlYPxCfwzmv62OLBchS7x1CqrLHhfU7rMeljNWIIgRF7uUef4U9MtGw+PXHd+cKXZ4oHTEtr/YErTRyDIU81Z/SU3nWpxmB4mCpqpK4H80g9zMPk3HKPoPdCA8Iv/zMGYEphP4L436bz74pfUV1wjL94izUHkymQ2KXmfuMF3fkYVXNGVYGHVTA1bbMx/xRgW+QPYxU5N6XPSZ8k="
 cache:
   directories:
   - node_modules
-script: 
-  - yarn build
+script:
+- yarn build
 deploy:
   provider: script
   script: yarn install && yarn run deploy
   skip_cleanup: true
   on:
     branch: source
+env:
+  global:
+    secure: N0X0xtjzWuiStwbNuZIRheXYHqcFwqYwcLP3hX6wxNqnXpnR5r9U2o3NvReA67ou9+eOU3Nvd+xMZa9FWaC8avYjDBMGismflym9ri4ya6Ls51GQj6J+ujpb3vtQQ0Ps8lAyeCHWHZUZtOnAW74fPKIobtppZZWq1NROOvklk5P/+qB7vKqb2jVgY4ozI6iEIZ7LtXKIbO/noEHxzV0zCcpV2SORuHWVkXY2j/rOZaWGBja39P9GGHbN4SGYhUHosasZKSbtxcH6MvFDqjA9lAglKvqLK7cNApP/xcmW3MQIjejaslMhcIMcgl7ilHVH+Fdq++1RI7VNkjzSTFQN7g1iyxELA3U8jsxIn7RQnItwSyx3zY/GehtCfTJ3uL+ySEq5LDvobc4/9l25ctHbCDNpKM8a2TxRdL7CLc43NN7XSw4kAiMzLXDUFjAmpEVZpZn3zIsYGQ7PwfioaMiBOOKF2D3Lz8X1uPDMS6+n3K9KAx6SISa8sN3hR6HEwZQ0eEQ3aZlNl0Yv9c006SLWh0VQqMXXPcjgj2GDV3RTHwDiPSjXs6/MoKaRJ6n1mTGj5SK0+1uZt+NJrbnagwxNG8b6YH5T7qfWcksWeQXKHgdSZ+pTTT20v2jA+YkXfk7u8zkLyQu6p78NRCW4bUg2V1WoBsCEY+XWQDriVs92fYQ=
