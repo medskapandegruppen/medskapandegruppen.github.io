@@ -10,7 +10,7 @@ script:
 deploy:
   provider: script
   # Note: change "docs" to the directory where your gatsby-site lives, if necessary
-  script: yarn install && yarn run deploy
+  script: yarn install && yarn run github:deploy
   skip_cleanup: true
   on:
     branch: source
