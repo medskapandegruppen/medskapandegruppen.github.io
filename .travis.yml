@@ -5,6 +5,7 @@ node_js:
   - "stable"
 git:
   depth: 3
+secure: "EMs9183UUqFibUqUXW8S71sYghuU99fi80mH0uYVD1d29Ccfx4+hiByJQzFkOxPXWf8v/+Yka2t2INtErGDOWoeHoZ3N6LZAw/xgDKEaUmbHNMOTyQyVHMBQRBf+EAOFBTF5z3sXknbi1n4OQk2AyHWsVEK3NAgITiXciSadFKjJlNTKHQFWsD7e4ToiS9kXLGb8Zpxm2YxaGZbSkiOhDxI5pJbEkxGqtRpp/rvpBr8hwdgn83qyZUN1fPk4XzzPNoTj9dZ8qC6z4fvxqOxvhC3SltReWiWv6sn4I57xHTOICPirFh8LhiCjIdeY/pIizJ6P+h4MuIZ1lz08hqddLpJmr1kroyE7EtoUTjryDoaqskcgDysME2g92EqAE2DMBIFpEtPH+kj/XHwXhtI3Jar17zTg831ifu4PR+azHBUtJkexbMdLCP4BLo7iTgpvfrwSjK7BUZve6rzZjCe7xbmMapSKlYPxCfwzmv62OLBchS7x1CqrLHhfU7rMeljNWIIgRF7uUef4U9MtGw+PXHd+cKXZ4oHTEtr/YErTRyDIU81Z/SU3nWpxmB4mCpqpK4H80g9zMPk3HKPoPdCA8Iv/zMGYEphP4L436bz74pfUV1wjL94izUHkymQ2KXmfuMF3fkYVXNGVYGHVTA1bbMx/xRgW+QPYxU5N6XPSZ8k="
 cache:
   directories:
   - node_modules
@@ -12,7 +13,6 @@ script:
   - yarn build
 deploy:
   provider: script
-  # Note: change "docs" to the directory where your gatsby-site lives, if necessary
   script: yarn install && yarn run deploy
   skip_cleanup: true
   on:
